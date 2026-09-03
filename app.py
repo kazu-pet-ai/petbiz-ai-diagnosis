@@ -149,6 +149,6 @@ if submitted:
         <p>この診断は、数値から課題の可能性を整理した簡易診断です。本当に重要なのは、『なぜその数字になったのか』を現場から見つけること。30分無料相談では、AIを使うべきところ・人が担うべきところを一緒に整理します。</p></div>""",
         unsafe_allow_html=True,
     )
-    st.link_button("30分無料相談を申し込む →", CTA_URL, use_container_width=True, type="primary")
+    st.link_button("AI 30分無料相談を申し込む", CTA_URL, use_container_width=True, type="primary")
 
 st.markdown('<div class="disclaimer">本診断は簡易的なデモであり、経営成果を保証するものではありません。<br>入力された情報のみをもとに課題仮説を提示します。入力情報は保存しません。</div>', unsafe_allow_html=True)
