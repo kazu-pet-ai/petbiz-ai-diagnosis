@@ -26,15 +26,9 @@ streamlit run app.py
 1. このフォルダをGitHubリポジトリへpushします（`.env` と `.streamlit/secrets.toml` はコミットしないでください）。
 2. [Streamlit Community Cloud](https://share.streamlit.io/) でGitHub連携し、対象リポジトリを選びます。
 3. Main file pathに `app.py` を指定してDeployします。
-4. 必要に応じてApp settings → Secretsへ以下を登録します。
-
-```toml
-CTA_URL = "https://your-consultation-page.example"
-```
-
 ## CTA URLの変更
 
-本番ではStreamlit Secretsの `CTA_URL` を変更します。ローカルでは環境変数 `CTA_URL` も利用できます。未設定時は `https://example.com` です。コード上の既定値を変える場合は `config.py` を編集します。
+CTAは公開情報であるGoogleフォームURLへ固定しており、Secretsや環境変数は使用しません。変更する場合は `config.py` の `CTA_URL` を編集します。
 
 ## 将来的なGemini API接続
 
